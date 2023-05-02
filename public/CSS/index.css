@@ -1,3 +1,25 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    background: rgb(19, 31, 31);
+    background-color: #222e3c;
+}
+
+.cover{
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    font-size: 2rem;
+    color: #0C4B33;
+}
+
+.subtitle {
+    color: #0C4B33;
 }
