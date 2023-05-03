@@ -7,21 +7,80 @@
 }
 
 body{
-    background-color: #222e3c;
+    background-color: #0d1d31;
 }
 
+/* Section Landing */
 .cover{
     display: flex;
     flex-direction: row;
-}
-
-.name {
-    font-size: 2rem;
+    width: 100%;
 }
 
 
+/* IMAGEN DE PORTADA */
+
+.cover-foto{
+    width: 50%;
+}
 
 .cover-foto img{
     background-size: cover;
-    border-bottom-right-radius: 40%;
+    border-bottom-right-radius: 300px;
+    width: 80%;
+    height: 80vh;
+}
+
+/* Nombre y titulo */
+
+.name-container{
+    padding-top: 50px;
+    width: 50%;
+}
+
+.name{
+    font-size: 4rem;
+}
+
+.subtitle{
+    font-size: 2rem;
+    text-align: end;
+}
+
+.name span{
+    font-size: 4rem;
+    color: #a4a8ad;
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    .cover{
+        flex-direction: column;
+    }
+    .cover-foto{
+        width: 100%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 768px) {
+    .cover{
+        flex-direction: column;
+    }
+    .cover-foto{
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    .cover{
+        flex-direction: row;
+    }
+    
+
 }
