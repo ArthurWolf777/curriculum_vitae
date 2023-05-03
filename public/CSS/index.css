@@ -17,9 +17,11 @@ body{
 
 .name {
     font-size: 2rem;
-    color: #0C4B33;
 }
 
-.subtitle {
-    color: #0C4B33;
+
+
+.cover-foto img{
+    background-size: cover;
+    border-bottom-right-radius: 40%;
 }
