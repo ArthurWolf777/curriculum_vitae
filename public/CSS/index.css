@@ -12,7 +12,6 @@ body{
 
 /* Section Landing */
 .cover{
-    border: 2px greenyellow solid;
     display: flex;
     flex-direction: row;
 }
@@ -21,13 +20,12 @@ body{
 /* IMAGEN DE PORTADA */
 
 .cover-foto{
-    border: 2px solid magenta;
     padding: 25px;
     width: 50%;
 }
 
 .cover-foto img{
-    background-size: cover;
+    object-fit: cover;
     border-bottom-left-radius: 200px;
     border-top-right-radius: 200px;
     width: 80%;
@@ -62,16 +60,56 @@ body{
 }
 
 
+
+strong
+{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #00FFCA 0%,
+        #05BFDB 29%,
+        #088395 67%,
+        #0A4D68 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+
+
 /* ANIMACIÓN DEL COVER */
 .animation-cover {
-    border: #26aee4 2px solid;
+    margin-top: 30px;
     overflow: hidden;
+    position: relative;
+    align-items: center;
+    height: min-content;
+    padding-top: 20px;
+    padding-right: 20px;
+
 }
 
 .animation-cover p {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
 }
 
 .animation-cover p.active {
@@ -80,14 +118,13 @@ body{
 }
 
 .animation-cover p.inactive{
-    opacity: 0;
     position: absolute;
-    margin-top: -200px;
+    margin-top: -20px;
+    transform: translateY(20px);
 }
 
-.animation-cover p strong {
-    color: #26aee4;
-    text-shadow: 0px 0px 30px rgba(84, 105, 223, 0.8);
+.animation-cover p, .animation-cover p strong {
+    font-size: 2.5rem;
 }
 
 @keyframes fade-in {
@@ -111,7 +148,6 @@ body{
 
     .cover-foto{
         width: 100%;
-        border: 2px solid magenta;
         padding: 0px;
     }
     
@@ -135,7 +171,6 @@ body{
 
     .cover-foto{
         width: 100%;
-        border: 2px solid green;
         padding: 0px;
     }
     
@@ -157,7 +192,6 @@ body{
     }
 
     .cover-foto{
-        border: 2px solid blue;
         width: 100%;
         padding: 0px;
     }
@@ -177,7 +211,6 @@ body{
     
     .name{
         font-size: 2rem;
-        
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -197,6 +230,20 @@ body{
     
     .about-me {
         text-align: justify;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .animation-cover{
+        margin-top: 5px;
+    }
+
+    .animation-cover p, .animation-cover p strong {
+        font-size: 2rem;
+    }
+
+    .animation-cover p {
         padding-top: 20px;
         padding-left: 20px;
         padding-right: 20px;

@@ -9,7 +9,9 @@ const indexP6 = document.getElementById('p-6');
 const ListAnimation = [indexP, indexP1, indexP2, indexP3, indexP4, indexP5, indexP6];
 
 // Agregar la clase 'active' al primer elemento de la lista al inicio
+ListAnimation[0].classList.remove('inactive');
 ListAnimation[0].classList.add('active');
+
 
 const animationInterval = setInterval(() => {
     let currentIndex = ListAnimation.findIndex((el) => el.classList.contains('active'));
@@ -18,4 +20,4 @@ const animationInterval = setInterval(() => {
 
     ListAnimation[(currentIndex + 1) % ListAnimation.length].classList.remove('inactive');
     ListAnimation[(currentIndex + 1) % ListAnimation.length].classList.add('active');
-}, 2000);
+}, 4000);
