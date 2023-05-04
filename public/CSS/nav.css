@@ -31,3 +31,43 @@
 .nav-container ul li.selected{
     display: none;
 }
+
+
+@media (max-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 768px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    .nav-container{
+        position: fixed;
+        top: 90vh;
+        width: 100%;
+    }
+
+    .nav-container ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-container ul li{
+        font-size: 0.70rem;
+        margin-left: auto;
+        margin-left: 0px;
+        border: 1px gray solid;
+        background: #DB00FF;
+        border-radius: 3px;
+        padding: 1px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #00B7FF;
+    }
+
+}
