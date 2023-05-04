@@ -1,0 +1,79 @@
+.work-container{
+    height: 40vh;
+    overflow: hidden;
+}
+
+
+/* Ocultar la barra de desplazamiento por defecto */
+.work-container::-webkit-scrollbar {
+    display: none;
+}
+
+  /* Estilos para la barra de desplazamiento personalizada */
+.work-container {
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.work-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.work-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 20px;
+}
+
+.work-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.work{
+    padding-top: 5px;
+}
+
+.functions-experience {
+    font-size: 0.8rem;
+    text-align: justify;
+    padding-left: 10px;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.work h4 strong{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.work p {
+    margin-top: 10px;
+}
+
+.work p span{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (max-width: 768px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    .work{
+        padding-top: 25px;
+    }
+
+    .functions-experience {
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,33 @@
+.nav-container{
+    position: absolute;
+    margin-top: 40px;
+}
+
+.nav-container ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-container ul li{
+    font-size: 1rem;
+    margin-left: 10px;
+    
+    background-image: linear-gradient(to right, #ffff, #fff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    font-weight: bold;
+}
+
+.nav-container ul li:hover{
+    background-image: linear-gradient(to right,  #DB00FF, #00B7FF, #00FFD2);
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.nav-container ul li.selected{
+    display: none;
+}
