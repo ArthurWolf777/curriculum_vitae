@@ -40,6 +40,7 @@
 /* Medium devices (tablets, 768px and up)*/
 
 @media (max-width: 768px) {
+
     
 }
 
@@ -47,9 +48,9 @@
 
 @media (max-width: 992px) {
     .nav-container{
-        position: fixed;
-        top: 90vh;
+        position: initial;
         width: 100%;
+        margin-top: 10px;
     }
 
     .nav-container ul {
