@@ -7,7 +7,7 @@
 }
 
 body{
-    background: linear-gradient(180deg, #0d1d31 70%, #21497a 100%);
+    background: linear-gradient(180deg, #0d1d31  60%, #005dce 100%);
     height: 100vh;
 }
 
@@ -203,6 +203,10 @@ strong
         padding: 20px;
         justify-content: center;
     }
+
+    .animation-cover p, .animation-cover p strong {
+        font-size: 1rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -262,7 +266,7 @@ strong
     }
 
     .animation-cover p, .animation-cover p strong {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .animation-cover p {
