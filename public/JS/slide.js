@@ -29,7 +29,7 @@ if (windowWidth < 769) {
     });
 
     var counterSection = 0;
-    const initialX = 90;
+    const initialX = 150;
     // Mover secciones a la Izquierda del DOM en responsive
 
     function changeComponent(){
@@ -43,28 +43,28 @@ if (windowWidth < 769) {
         if(counterSection == 0){
             
             console.log('WorkExperience');
-            counterSection = 1;
+            counterSection ++;
             aboutMe.classList.add('section-inactive');
             WorkExperience.classList.remove('section-inactive');
 
         } else if(counterSection == 1){
 
             console.log('education');
-            counterSection = 2;
+            counterSection ++;
             WorkExperience.classList.add('section-inactive');
             education.classList.remove('section-inactive');
 
         } else if(counterSection == 2){
 
             console.log('Technical Skills')
-            counterSection = 3;
+            counterSection ++;
             education.classList.add('section-inactive');
             techSkills.classList.remove('section-inactive');
 
         } else if(counterSection == 3){
 
             console.log('Projects');
-            counterSection = 4;
+            counterSection ++;
             techSkills.classList.add('section-inactive');
             projects.classList.remove('section-inactive');
 
@@ -72,6 +72,7 @@ if (windowWidth < 769) {
 
             console.log('About-me');
             counterSection = 0;
+
             projects.classList.add('section-inactive');
             aboutMe.classList.remove('section-inactive');
         }
