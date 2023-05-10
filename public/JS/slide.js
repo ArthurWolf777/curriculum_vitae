@@ -1,3 +1,5 @@
+'use strict';
+
 // obtener el ancho y alto de la ventana del navegador
 const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
@@ -5,7 +7,7 @@ const windowHeight = window.innerHeight;
 
 // comprobación condicional basada en el tamaño de la ventana
 if (windowWidth < 769) {
-    // hacer algo si la ventana es menor que 768px
+    // hacer algo si la ventana es menor o igual que 768px
     const slideComponent = document.getElementById('slide');
     const coverComponent = document.getElementById('cover');
 
@@ -15,6 +17,7 @@ if (windowWidth < 769) {
         const tiempoFinal = 0;
 
         let tiempoActual = tiempoInicial;
+
         const intervalo = setInterval(function() {
             tiempoActual--;
 
@@ -29,13 +32,13 @@ if (windowWidth < 769) {
     });
 
     var counterSection = 0;
-    const initialX = 150;
+    const initialX = 250;
     // Mover secciones a la Izquierda del DOM en responsive
 
-    function changeComponent(){
+    function ChangeComponent(){
 
         const aboutMe = document.getElementById('about-me');
-        const WorkExperience = document.getElementById('work-experience');
+        const workExperience = document.getElementById('work-experience');
         const education = document.getElementById('education');
         const techSkills = document.getElementById('tech-skills');
         const projects = document.getElementById('projects');
@@ -45,13 +48,13 @@ if (windowWidth < 769) {
             console.log('WorkExperience');
             counterSection ++;
             aboutMe.classList.add('section-inactive');
-            WorkExperience.classList.remove('section-inactive');
+            workExperience.classList.remove('section-inactive');
 
         } else if(counterSection == 1){
 
             console.log('education');
             counterSection ++;
-            WorkExperience.classList.add('section-inactive');
+            workExperience.classList.add('section-inactive');
             education.classList.remove('section-inactive');
 
         } else if(counterSection == 2){
@@ -88,7 +91,7 @@ if (windowWidth < 769) {
             slideComponent.classList.add('deactivate');
     
             console.log(counterSection);
-            changeComponent();
+            ChangeComponent();
         }
     });
 
