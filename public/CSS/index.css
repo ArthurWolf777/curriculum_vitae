@@ -63,10 +63,15 @@ body{
     );
 
     /*background-image: linear-gradient(to right, #FFB900, #FF7A00, #FF0077, #DB00FF, #00B7FF, #00FFD2);*/
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
     background-clip: text;
-    color: transparent;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear;
 }
 
 .name span{
@@ -254,25 +259,20 @@ strong
     
     .about-me {
         text-align: justify;
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
+        
     }
 
     .animation-cover{
         margin-top: 0px;
         padding-top: 5px;
-        padding-right: 0px;
     }
 
     .animation-cover p, .animation-cover p strong {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .animation-cover p {
         padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
     
 

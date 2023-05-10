@@ -9,11 +9,11 @@ const windowHeight = window.innerHeight;
 if (windowWidth < 769) {
     // hacer algo si la ventana es menor o igual que 768px
     const slideComponent = document.getElementById('slide');
-    const coverComponent = document.getElementById('cover');
+    const componentContainer = document.getElementById('component-container');
 
     document.addEventListener("DOMContentLoaded", function() {
 
-        const tiempoInicial = 4;
+        const tiempoInicial = 3;
         const tiempoFinal = 0;
 
         let tiempoActual = tiempoInicial;
@@ -23,7 +23,7 @@ if (windowWidth < 769) {
 
             if(tiempoActual < tiempoFinal){
                 clearInterval(intervalo);
-                console.log('Muestra el menú');
+                console.log('Muestra el slide');
                 slideComponent.classList.remove('deactivate');
                 slideComponent.classList.add('touch-widget-container');
             }
@@ -32,7 +32,7 @@ if (windowWidth < 769) {
     });
 
     var counterSection = 0;
-    const initialX = 250;
+    const initialX = 150;
     // Mover secciones a la Izquierda del DOM en responsive
 
     function ChangeComponent(){
@@ -81,7 +81,7 @@ if (windowWidth < 769) {
         }
     };
 
-    coverComponent.addEventListener('touchend', (e) => {
+    componentContainer.addEventListener('touchend', (e) => {
 
         const finalX = e.changedTouches[0].clientX;
         console.log(finalX);
