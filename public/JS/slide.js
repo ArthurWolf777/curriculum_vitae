@@ -29,7 +29,7 @@ if (windowWidth < 769) {
     });
 
     var counterSection = 0;
-    const initialX = 15;
+    const initialX = 90;
     // Mover secciones a la Izquierda del DOM en responsive
 
     function changeComponent(){
@@ -71,7 +71,7 @@ if (windowWidth < 769) {
         }else if(counterSection == 4){
 
             console.log('About-me');
-            counterSection == 0;
+            counterSection = 0;
             projects.classList.add('section-inactive');
             aboutMe.classList.remove('section-inactive');
         }
