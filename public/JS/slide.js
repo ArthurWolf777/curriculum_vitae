@@ -29,7 +29,7 @@ if (windowWidth < 769) {
     });
 
     var counterSection = 0;
-    let initialX;
+    const initialX = 15;
     // Mover secciones a la Izquierda del DOM en responsive
 
     function changeComponent(){
@@ -64,7 +64,7 @@ if (windowWidth < 769) {
         } else if(counterSection == 3){
 
             console.log('Projects');
-            counterSection == 4;
+            counterSection = 4;
             techSkills.classList.add('section-inactive');
             projects.classList.remove('section-inactive');
 
