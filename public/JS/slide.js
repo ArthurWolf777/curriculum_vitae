@@ -28,8 +28,36 @@ if (windowWidth < 769) {
         }, 1000);
     });
 
+    var counterSection = 0;
     let initialX;
     // Mover secciones a la Izquierda del DOM en responsive
+
+    function changeComponent(){
+        const aboutMe = document.getElementById('about-me');
+        const WorkExperience = document.getElementById('work-experience');
+        const education = document.getElementById('education');
+
+        if(counterSection == 0){
+            
+            console.log('WorkExperience');
+            counterSection = 1;
+            aboutMe.classList.add('section-inactive');
+            WorkExperience.classList.remove('section-inactive');
+
+        } else if(counterSection == 1){
+
+            console.log('education');
+            counterSection = 2;
+            WorkExperience.classList.add('section-inactive');
+            education.classList.remove('section-inactive');
+
+        } else if(counterSection == 2){
+
+            console.log('Technical Skills')
+            
+        }
+    };
+
     coverComponent.addEventListener('touchend', (e) => {
 
         initialX = e.changedTouches[0].clientX;
@@ -37,6 +65,9 @@ if (windowWidth < 769) {
         
         slideComponent.classList.remove('touch-widget-container');
         slideComponent.classList.add('deactivate');
+
+        console.log(counterSection);
+        changeComponent();
     });
 
 
